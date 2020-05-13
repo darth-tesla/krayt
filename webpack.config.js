@@ -97,24 +97,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.pug",
+      template: "./pages/index/index.pug",
       minify: {
         collapseWhitespace: isProd,
       },
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, "src/assets/theme/fonts"),
+        from: path.resolve(__dirname, "src/theme/fonts"),
         to: path.resolve(__dirname, "dist"),
       },
       {
-        from: path.resolve(__dirname, "src/assets/theme/img"),
+        from: path.resolve(__dirname, "src/theme/img"),
         to: path.resolve(__dirname, "dist"),
-      },
-      {
-        from: path.resolve(__dirname, "src/assets/theme/libs"),
-        to: path.resolve(__dirname, "dist"),
-      },
+      }
     ]),
     new CleanWebpackPlugin(),
     new MiniCssExtractPugin({
