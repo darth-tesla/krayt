@@ -6,12 +6,27 @@
     align-items: center;
     padding-top: 30px;
   }
-  &__item {
-    margin-right: 40px;
+  &__nav {
+    max-width: 441px;
   }
-  &__list {
-    display: flex;
-    align-items: center;
+  &__main-content {
+    color: #ffffff;
+  }
+  &__title {
+    font-family: "Dosis-SemiBold";
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 441px;
+  &__item {
+    margin-right: 20px;
   }
   &__link {
     color: #ffffff;
