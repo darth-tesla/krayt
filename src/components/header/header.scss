@@ -1,0 +1,28 @@
+.header {
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  &__nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+  &__item {
+    margin-right: 40px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    color: #ffffff;
+  }
+  &__download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #ffffff;
+  }
+}

@@ -3,6 +3,17 @@ body {
   font-size: 14px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
