@@ -111,7 +111,14 @@
     font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 23.95px;
+    transition: 300ms;
+    &:hover {
+      border: 1px solid #fd712c;
+      background-color: #fd712c;
+      color: #ffffff;
+    }
     &_offer {
+      position: relative;
       width: 139px;
       height: 40px;
       box-shadow: 0 0 0 3px #e1e1e1;
@@ -119,6 +126,28 @@
       border-radius: 20px;
       background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
       color: #ffffff;
+      transition: 300ms;
+      overflow: hidden;
+      z-index: 1;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        background-image: linear-gradient(to left, #fd712c 0%, #f21780 100%);
+        transition: opacity.3s ease-in-out;
+        z-index: -1;
+      }
+      &:hover {
+        border: none;
+        &:after {
+          opacity: 1;
+        }
+      }
     }
   }
 }
