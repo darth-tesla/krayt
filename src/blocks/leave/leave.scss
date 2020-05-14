@@ -1,0 +1,44 @@
+.leave {
+  background-color: #f7fafc;
+  overflow: hidden;
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 0 175px;
+  }
+  &__text-col {
+    max-width: 515px;
+    margin-right: 25px;
+  }
+  &__shadow {
+    position: absolute;
+    left: -300px;
+  }
+  &__title {
+    margin-bottom: 26px;
+    font-family: "Dosis-SemiBold";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #222222;
+  }
+  &__desc {
+    line-height: 24px;
+    &_first {
+      margin-bottom: 70px;
+    }
+  }
+  &__list {
+    margin-top: 32px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__icon {
+    margin-right: 20px;
+  }
+}
