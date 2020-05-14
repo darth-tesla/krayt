@@ -68,6 +68,11 @@
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: #ffffff;
+    transition: 300ms;
+    &:hover {
+      background-color: #222222;
+      color: #ffffff;
+    }
   }
   &__img {
     position: absolute;
@@ -105,6 +110,10 @@
   }
   &__link {
     color: #ffffff;
+    transition: 300ms;
+    &:hover {
+      color: #222222;
+    }
   }
   &__download-btn {
     display: flex;
@@ -115,6 +124,11 @@
     font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
     border-radius: 17px;
     background-color: #ffffff;
+    transition: 300ms;
+    &:hover {
+      background-color: #222222;
+      color: #ffffff;
+    }
   }
 }
 
