@@ -7,14 +7,35 @@
     align-items: center;
     justify-content: space-between;
     padding: 120px 0 175px;
+    @media(max-width: $md) {
+      flex-direction: column-reverse;
+      padding: 80px 0;
+    }
   }
   &__text-col {
     max-width: 515px;
     margin-right: 25px;
+    @media(max-width: $md) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+  &__img {
+    @media(max-width: $lg) {
+      min-width: 270px;
+      width: 300px;
+      margin-right: 40px;
+    }
+    @media(max-width: $sm) {
+      width: 270px;
+    }
   }
   &__shadow {
     position: absolute;
     left: -300px;
+    @media(max-width: $md) {
+      bottom: 0;
+    }
   }
   &__title {
     margin-bottom: 26px;
@@ -28,6 +49,9 @@
     line-height: 24px;
     &_first {
       margin-bottom: 70px;
+      @media(max-width: $md) {
+        margin-bottom: 30px;
+      }
     }
   }
   &__list {
