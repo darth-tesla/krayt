@@ -1,1 +1,1 @@
-import "../../components/header/header"
+import "../../blocks/header/header"

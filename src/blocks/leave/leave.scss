@@ -1,5 +1,4 @@
 .leave {
-  background-color: #f7fafc;
   overflow: hidden;
   &__content {
     position: relative;
@@ -7,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 120px 0 175px;
-    @media(max-width: $md) {
+    @media (max-width: $md) {
       flex-direction: column-reverse;
       padding: 80px 0;
     }
@@ -15,41 +14,36 @@
   &__text-col {
     max-width: 515px;
     margin-right: 25px;
-    @media(max-width: $md) {
+    @media (max-width: $md) {
       margin-right: 0;
       margin-bottom: 40px;
     }
   }
   &__img {
-    @media(max-width: $lg) {
+    @media (max-width: $lg) {
       min-width: 270px;
       width: 300px;
       margin-right: 40px;
     }
-    @media(max-width: $sm) {
+    @media (max-width: $sm) {
       width: 270px;
     }
   }
   &__shadow {
     position: absolute;
     left: -300px;
-    @media(max-width: $md) {
+    @media (max-width: $md) {
       bottom: 0;
     }
   }
   &__title {
     margin-bottom: 26px;
-    font-family: "Dosis-SemiBold";
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 30px;
-    color: #222222;
   }
   &__desc {
     line-height: 24px;
     &_first {
       margin-bottom: 70px;
-      @media(max-width: $md) {
+      @media (max-width: $md) {
         margin-bottom: 30px;
       }
     }
@@ -58,6 +52,7 @@
     margin-top: 32px;
   }
   &__item {
+    font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
     &:not(:last-child) {
       margin-bottom: 20px;
     }

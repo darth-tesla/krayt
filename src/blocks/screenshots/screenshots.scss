@@ -1,0 +1,18 @@
+.screenshots {
+  background-color: #f7fafc;
+  &__content {
+    padding: 120px 0;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__desc {
+    max-width: 660px;
+    margin: auto;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
