@@ -23,10 +23,25 @@
   width: 900px;
   margin: auto;
   overflow: hidden;
+  @media (min-width: $lg) and(max-width: $xl) {
+    max-width: 700px;
+  }
+  @media (min-width: $md) and(max-width: $lg) {
+    max-width: 600px;
+  }
+  @media (min-width: $sm) and(max-width: $md) {
+    max-width: 440px;
+  }
+  @media (max-width: $sm) {
+    max-width: 250px;
+  }
   .swiper {
     &-image {
       height: 500px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      @media (max-width: $sm) {
+        height: 350px;
+      }
     }
     &-slide {
       transform: scale(0.8);
@@ -64,6 +79,9 @@
     transform: translate(0, -50%);
     z-index: 20;
     cursor: pointer;
+    @media (max-width: $sm) {
+      top: 480px;
+    }
     & i {
       color: #ffffff;
     }
@@ -71,6 +89,9 @@
   &-button-prev {
     left: 20px;
     z-index: 20px;
+    @media (max-width: $sm) {
+      left: -10px;
+    }
     &:after {
       display: none;
     }
@@ -78,8 +99,21 @@
   &-button-next {
     right: 20px;
     z-index: 20px;
+    @media (max-width: $sm) {
+      right: -10px;
+    }
     &:after {
       display: none;
+    }
+  }
+  &-button-disabled {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    background-image: none;
+    background-color: #ffffff;
+    & i {
+      color: #777777;
     }
   }
 }
