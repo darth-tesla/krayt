@@ -4,11 +4,11 @@
     text-align: center;
   }
   &__title {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
   &__desc {
     max-width: 660px;
-    margin: 0 auto 80px;
+    margin: 0 auto 60px;
     color: #777777;
     line-height: 24px;
   }
@@ -84,6 +84,16 @@
     background-color: #ffffff;
     @media (max-width: $xl) {
       transform: scale(1);
+    }
+  }
+  & .slick-disabled {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    background-image: none;
+    background-color: #ffffff;
+    & i {
+      color: #777777;
     }
   }
 }

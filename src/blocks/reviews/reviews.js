@@ -9,6 +9,8 @@ $(".slider").slick({
   slidesToShow: 3,
   centerMode: true,
   centerPadding: '-50px',
+  infinite: false,
+  initialSlide: 1,
   responsive: [
     {
       breakpoint: 992,
