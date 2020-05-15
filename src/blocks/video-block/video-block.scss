@@ -87,4 +87,9 @@
       color: #fd712c;
     }
   }
+  &__video {
+    @media(max-width: $sm) {
+      max-width: 95%;
+    }
+  }
 }
