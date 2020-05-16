@@ -37,19 +37,42 @@
   &:hover .download-card__title {
     color: #f31f79;
   }
+  &:hover .download-card__android-col {
+    background-image: url("/android-hovered.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover .download-card__apple-col {
+    background-image: url("/apple-hovered.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover .download-card__windows-col {
+    background-image: url("/windows-hovered.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   &__icon-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 115px;
     width: 115px;
     height: 115px;
     border-radius: 3px;
     background-color: #f7fafc;
   }
-  &__android-icon {
-    min-width: 50px;
-    max-width: 50px;
+  &__apple-col {
+    background-image: url("/apple.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__android-col {
+    background-image: url("/android.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__windows-col {
+    background-image: url("/windows.png");
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &__text-col {
     padding: 0 19px;
