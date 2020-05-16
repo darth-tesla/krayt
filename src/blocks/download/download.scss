@@ -47,6 +47,10 @@
     border-radius: 3px;
     background-color: #f7fafc;
   }
+  &__android-icon {
+    min-width: 50px;
+    max-width: 50px;
+  }
   &__text-col {
     padding: 0 19px;
     text-align: left;
